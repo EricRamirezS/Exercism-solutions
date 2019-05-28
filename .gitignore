@@ -22,12 +22,9 @@ gradle-app.setting
 *.jar
 *.properties
 *.bat
-java/anagram/gradlew
 *.md
 java/anagram/src/main/java/.keep
 *.class
 *.json
-java/two-fer/gradlew
-java/isogram/gradlew
-java/hello-world/gradlew
 report.js
+gradlew
