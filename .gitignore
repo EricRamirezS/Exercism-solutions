@@ -29,3 +29,4 @@ java/anagram/src/main/java/.keep
 report.js
 gradlew
 java/pig-latin/src/main/java/.keep
+*.pyc
