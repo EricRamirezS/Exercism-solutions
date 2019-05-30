@@ -23,10 +23,9 @@ gradle-app.setting
 *.properties
 *.bat
 *.md
-java/anagram/src/main/java/.keep
 *.class
 *.json
 report.js
 gradlew
-java/pig-latin/src/main/java/.keep
 *.pyc
+*.keep
