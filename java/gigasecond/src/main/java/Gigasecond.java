@@ -5,22 +5,17 @@ import java.time.LocalDateTime;
 class Gigasecond {
 
     private final LocalDateTime finalDate;
-    private static final Duration GIGASECOND = Duration.ofSeconds((int)1e9);
+    private static final Duration GIGASECOND = Duration.ofSeconds(1_000_000_000);
 
     Gigasecond(LocalDate moment) {
         this(moment.atStartOfDay());
     }
 
     Gigasecond(LocalDateTime moment) {
-        finalDate = addGigasecond(moment);
-    }
-
-    private LocalDateTime addGigasecond(LocalDateTime moment) {
-        return moment.plus(GIGASECOND);
+        finalDate = moment.plus(GIGASECOND);
     }
 
     LocalDateTime getDateTime() {
         return finalDate;
     }
-
 }
