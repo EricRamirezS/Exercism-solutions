@@ -29,3 +29,4 @@ report.js
 gradlew
 *.pyc
 *.keep
+/users/
