@@ -1,19 +1,23 @@
 enum SquareColor {
+    WHITE(1, 1),
+    LIGHT_BLUE(2, 1),
+    BLUE(3, 1),
+    PINK(1, 2),
+    RED(1, 3);
 
-    WHITE, LIGHT_BLUE, BLUE, PINK, RED;
+    private final int letterMultiplier;
+    private final int wordMultiplier;
 
-    static int getMultiplier(SquareColor color, boolean isWord) {
-        switch (color) {
-            case RED:
-                return isWord ? 3 : 1;
-            case PINK:
-                return isWord ? 2 : 1;
-            case BLUE:
-                return isWord ? 1: 3;
-            case LIGHT_BLUE:
-                return isWord ? 1: 2;
-            default:
-                return 1;
-        }
+    SquareColor(int letterMultiplier, int wordMultiplier) {
+        this.letterMultiplier = letterMultiplier;
+        this.wordMultiplier = wordMultiplier;
+    }
+
+    int getLetterMultiplier() {
+        return letterMultiplier;
+    }
+
+    int getWordMultiplier() {
+        return wordMultiplier;
     }
 }
