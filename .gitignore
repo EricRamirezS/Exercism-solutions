@@ -30,3 +30,4 @@ gradlew
 *.pyc
 *.keep
 /users/
+/teams/
